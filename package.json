@@ -1,0 +1,117 @@
+{
+  "name": "vocabulary-trainer",
+  "version": "0.8.7",
+  "description": "Local-first vocabulary training application",
+  "private": true,
+  "type": "module",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:component": "vitest run tests/component",
+    "test:scope": "node scripts/test-scope.mjs",
+    "test:changed": "node scripts/test-scope.mjs",
+    "test:gate": "node scripts/test-scope.mjs all",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:voice": "playwright test tests/e2e/local-voice-performance.spec.ts",
+    "setup:voices": "node scripts/setup-voice-assets.mjs",
+    "desktop:dev": "npm run build && electron .",
+    "desktop:smoke": "npm run build && electron . --smoke-test-output=artifacts/desktop-smoke.json",
+    "desktop:build": "npm run build && electron-builder --win portable --x64",
+    "package:distribution": "powershell -ExecutionPolicy Bypass -File scripts/package-distribution.ps1"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.5.1",
+    "dexie": "^4.4.6",
+    "dexie-react-hooks": "^4.4.0",
+    "i18next": "^26.4.2",
+    "jszip": "^3.10.2",
+    "kokoro-js": "^1.2.1",
+    "kokoro-js-jp": "^0.2.0",
+    "kuroshiro": "^1.2.0",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0",
+    "lucide-react": "^1.47.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-i18next": "^17.0.15",
+    "react-router-dom": "^7.18.4",
+    "ts-fsrs": "^5.4.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "@vitest/coverage-v8": "^5.0.1",
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "fake-indexeddb": "^6.2.5",
+    "globals": "^17.12.0",
+    "jsdom": "^30.1.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.1",
+    "vite": "^8.3.0",
+    "vite-plugin-pwa": "^1.3.0",
+    "vitest": "^5.0.1"
+  },
+  "overrides": {
+    "sharp": "^0.35.3"
+  },
+  "build": {
+    "appId": "local.vocabularytrainer.app",
+    "productName": "Vocabulary Trainer",
+    "asar": true,
+    "electronDist": "node_modules/electron/dist",
+    "npmRebuild": false,
+    "electronLanguages": [
+      "en-US",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "ja",
+      "ko",
+      "ru",
+      "uk",
+      "zh-CN"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "desktop/**/*",
+      "package.json",
+      "!node_modules/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Vocabulary-Trainer-${version}-portable.${ext}"
+    }
+  }
+}

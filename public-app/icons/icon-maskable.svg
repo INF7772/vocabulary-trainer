@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Vocabulary Trainer">
+  <rect width="512" height="512" fill="#0f172a"/>
+  <circle cx="256" cy="256" r="205" fill="#0f172a"/>
+  <path d="M146 150h91c30 0 55 25 55 55v157h-91c-30 0-55-25-55-55V150Z" fill="#f8fafc"/>
+  <path d="M366 150h-91c-30 0-55 25-55 55v157h91c30 0 55-25 55-55V150Z" fill="#38bdf8"/>
+  <path d="M256 205v157" stroke="#0f172a" stroke-width="17" stroke-linecap="round"/>
+</svg>
