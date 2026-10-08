@@ -45,7 +45,9 @@
     "empty": "Ihr Vokabelarbeitsbereich ist fertig.",
     "emptyBody": "Erstellen Sie Ihre erste Lektion in einer beliebigen Sprache oder importieren Sie eine vorhandene Lektionsdatei.",
     "createFirst": "Erstellen Sie Ihre erste Lektion",
-    "importLesson": "Lektion importieren"
+    "importLesson": "Lektion importieren",
+    "tryDemo": "Demo-Lektion ausprobieren",
+    "demoError": "Die Demo-Lektion konnte nicht vorbereitet werden. Bitte versuchen Sie es erneut."
   },
   "today": {
     "title": "Heute", "ready": "Deine Lernwarteschlange ist bereit", "continue": "Weiterlernen", "reviews": "Wiederholungen", "difficult": "Schwierig", "newCards": "Neu", "estimate": "Etwa {{minutes}} Minuten", "materialQueue": "Reihenfolge des neuen Materials", "remaining": "Noch {{count}} Wiederholungen", "typePrompt": "Erinnere dich an das Wort, bevor du die Antwort aufdeckst", "kanaChoicePrompt": "Wähle das Kana-Zeichen, das zum Romaji passt", "yourAnswer": "Zielwort eingeben", "check": "Antwort prüfen", "couldNotRecall": "Nicht erinnert", "answerCorrect": "Genau richtig", "answerDifferent": "Vergleiche deine Antwort mit der richtigen", "howWell": "Wie schnell hast du dich erinnert?", "ratingHint": "Wähle zuerst eine Antwort. Die nächste Aufgabe startet noch nicht.",

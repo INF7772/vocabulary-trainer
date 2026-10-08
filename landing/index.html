@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vocabulary Trainer turns your own vocabulary into structured, multimodal practice that adapts to mistakes. Local-first early alpha for Windows and the web."
+    />
+    <meta name="theme-color" content="#020617" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Vocabulary Trainer — Adaptive practice from your own words</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Vocabulary Trainer home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Vocabulary Trainer</span>
+        <span class="alpha-pill">Early alpha</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#product">Product</a>
+        <a class="nav-cta" href="#release">Get the alpha</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Local-first language learning</p>
+          <h1>Vocabulary you choose.<br /><span>Practice that adapts.</span></h1>
+          <p class="hero-intro">
+            Turn personal word lists into a focused learning loop across meaning,
+            images, sound, and exact recall. Mistakes return until the word is
+            genuinely usable—not merely familiar.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#how-it-works">See the learning loop</a>
+            <a class="button button-secondary" href="#release">Download Windows alpha</a>
+          </div>
+          <ul class="proof-list" aria-label="Product highlights">
+            <li>Works offline</li>
+            <li>10 interface languages</li>
+            <li>Your data stays local</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Vocabulary Trainer dashboard preview">
+          <div class="visual-glow" aria-hidden="true"></div>
+          <figure class="app-frame">
+            <div class="frame-bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <strong>Everyday English · Demo</strong>
+            </div>
+            <img
+              src="./assets/screens/01-home.png"
+              alt="Vocabulary Trainer dashboard with a ready learning queue and built-in demo lesson"
+              width="1440"
+              height="900"
+            />
+          </figure>
+          <div class="signal-card signal-card-top">
+            <span>Today</span>
+            <strong>8 new cards ready</strong>
+          </div>
+          <div class="signal-card signal-card-bottom">
+            <span>Learning loop</span>
+            <strong>Meaning · Sound · Recall</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="principle-band" aria-label="Product principle">
+        <p>Not another flashcard pile.</p>
+        <strong>One word becomes a set of independent recall skills.</strong>
+      </section>
+
+      <section class="section learning-loop" id="how-it-works">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The learning loop</p>
+          <h2>Recognition is the start.<br />Reliable recall is the goal.</h2>
+          <p>
+            Each lesson moves from guided recognition to active production.
+            Errors are delayed, reshuffled, and brought back in a different form.
+          </p>
+        </div>
+
+        <ol class="skill-grid">
+          <li class="skill-card reveal">
+            <span class="skill-number">01</span>
+            <div class="skill-icon" aria-hidden="true">Aa</div>
+            <h3>Meaning → word</h3>
+            <p>Build the first connection with focused multiple choice.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-number">02</span>
+            <div class="skill-icon image-icon" aria-hidden="true"></div>
+            <h3>Word → image</h3>
+            <p>Separate visual understanding from translation memory.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-number">03</span>
+            <div class="skill-icon sound-icon" aria-hidden="true">)))</div>
+            <h3>Audio → meaning</h3>
+            <p>Train recognition from locally stored speech and recordings.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-number">04</span>
+            <div class="skill-icon" aria-hidden="true">_</div>
+            <h3>Strict recall</h3>
+            <p>Type the target exactly, then automate it under time pressure.</p>
+          </li>
+        </ol>
+
+        <div class="retry-story reveal">
+          <div class="retry-copy">
+            <p class="eyebrow">Adaptive repetition</p>
+            <h3>A mistake does not reset the lesson.</h3>
+            <p>
+              The card returns after other tasks, preserving context without letting
+              the learner memorize the previous screen. Difficult cards stay visible
+              across learning and custom practice.
+            </p>
+          </div>
+          <div class="retry-diagram" aria-label="A card returns after two different tasks">
+            <div class="retry-node error-node"><span>Mistake</span><strong>market</strong></div>
+            <div class="retry-line"><i></i><i></i><i></i></div>
+            <div class="retry-node"><span>Different task</span><strong>fox</strong></div>
+            <div class="retry-node"><span>Different task</span><strong>window</strong></div>
+            <div class="retry-node return-node"><span>Returns</span><strong>market</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-section" id="product">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Working product</p>
+          <h2>A complete core workflow,<br />not a concept screen.</h2>
+          <p>
+            Create or import a lesson, learn it in three stages, review due cards,
+            and build targeted practice without sending vocabulary to a server.
+          </p>
+        </div>
+
+        <div class="gallery" data-gallery>
+          <div class="gallery-tabs" role="tablist" aria-label="Product views">
+            <button class="is-active" type="button" role="tab" aria-selected="true" data-image="02-lesson.png" data-alt="Lesson overview with progress and image cards">Lesson overview</button>
+            <button type="button" role="tab" aria-selected="false" data-image="03-learn.png" data-alt="Three-stage learning question">Three-stage learning</button>
+            <button type="button" role="tab" aria-selected="false" data-image="04-practice.png" data-alt="Custom practice builder">Practice builder</button>
+          </div>
+          <figure class="gallery-frame reveal">
+            <img
+              data-gallery-image
+              src="./assets/screens/02-lesson.png"
+              alt="Lesson overview with progress and image cards"
+              width="1440"
+              height="900"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section architecture-section">
+        <div class="architecture-card reveal">
+          <div>
+            <p class="eyebrow">Designed for ownership</p>
+            <h2>Your words, images, audio, and progress stay with you.</h2>
+          </div>
+          <ul>
+            <li><strong>Local-first</strong><span>IndexedDB and portable lesson files</span></li>
+            <li><strong>Offline-ready</strong><span>Practice and speech assets work without a connection</span></li>
+            <li><strong>Reusable</strong><span>One global card can belong to multiple lessons</span></li>
+            <li><strong>Portable</strong><span>PWA plus a self-contained Windows build</span></li>
+          </ul>
+        </div>
+        <div class="claude-card reveal">
+          <p class="eyebrow">Claude roadmap</p>
+          <h3>From a rough word list to a teachable lesson.</h3>
+          <p>
+            The next product slice uses Claude to turn learner-provided vocabulary
+            into concise context, natural examples, and plausible distractors—while
+            the practice engine and personal learning data remain local.
+          </p>
+          <span class="roadmap-label">Planned integration · clearly separated from the working alpha</span>
+        </div>
+      </section>
+
+      <section class="release-section" id="release">
+        <div class="release-copy reveal">
+          <p class="eyebrow">Early alpha · Windows &amp; web</p>
+          <h2>The core learning workflow is ready to try.</h2>
+          <p>
+            Lesson authoring, three-stage learning, custom practice, offline audio,
+            imports, exports, and local progress are functional. Authoring polish,
+            voice management, and the Claude-assisted workflow are still in active development.
+          </p>
+        </div>
+        <div class="release-actions reveal">
+          <a class="button button-primary" data-release-link href="#release" aria-disabled="true">Windows download coming with the public release</a>
+          <a class="text-link" data-source-link href="#release" aria-disabled="true">Source repository will be linked here</a>
+          <small>No account, subscription, or paid domain required.</small>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">V</span><span>Vocabulary Trainer</span></a>
+      <p>Independent early-alpha product · Built local-first</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -64,6 +64,9 @@ export function AppShell() {
               <BookOpen aria-hidden="true" size={19} />
             </span>
             <span className="hidden sm:inline">{APP_NAME}</span>
+            <span className="hidden rounded-full border border-sky-200 bg-sky-50 px-2 py-0.5 text-[0.65rem] font-black uppercase tracking-[0.16em] text-sky-700 md:inline dark:border-sky-800 dark:bg-sky-950 dark:text-sky-300">
+              Early alpha
+            </span>
           </NavLink>
           <nav
             aria-label={t("nav.primaryNavigation")}

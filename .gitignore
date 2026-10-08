@@ -5,8 +5,10 @@ playwright-report/
 test-results/
 artifacts/
 distribution/
+distribution-*/
 legacy-builds/
 release/
 release-*/
+public/voice-models/
 .env.local
 *.log

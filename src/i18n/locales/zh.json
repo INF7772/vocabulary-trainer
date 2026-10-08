@@ -45,7 +45,9 @@
     "empty": "您的词汇工作区已准备就绪。",
     "emptyBody": "使用任何语言创建您的第一节课程或导入现有课程文件。",
     "createFirst": "创建您的第一节课",
-    "importLesson": "导入课程"
+    "importLesson": "导入课程",
+    "tryDemo": "试用演示课程",
+    "demoError": "无法准备演示课程，请重试。"
   },
   "today": {
     "title": "今天", "ready": "今天的学习队列已准备好", "continue": "继续学习", "reviews": "复习", "difficult": "难词", "newCards": "新卡片", "estimate": "大约 {{minutes}} 分钟", "materialQueue": "新材料队列", "remaining": "还剩 {{count}} 个复习", "typePrompt": "查看答案前先回想单词", "kanaChoicePrompt": "请选择与罗马字对应的假名", "yourAnswer": "输入目标词", "check": "检查答案", "couldNotRecall": "没想起来", "answerCorrect": "完全正确", "answerDifferent": "请对照正确答案", "howWell": "你多快想起来了？", "ratingHint": "请先选择一个选项，此时不会进入下一题。",

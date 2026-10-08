@@ -1,6 +1,35 @@
 # Vocabulary Trainer
 
-Local-first vocabulary training PWA with Lesson authoring, offline media, three-stage Learn sessions, Quick Choice, Chaos, portable Lesson packages/full backups, global Card statistics, and reusable Cards backed by IndexedDB. Product behavior is defined in `docs/SPEC.md`; current verification is tracked in `docs/STATUS.md`.
+**Adaptive vocabulary practice from your own words.** Vocabulary Trainer is a
+local-first early alpha that turns personal vocabulary and media into structured
+practice across meaning, images, sound, and exact recall. Mistakes return after
+other tasks until the learner can reproduce the word reliably.
+
+![Vocabulary Trainer dashboard](landing/assets/screens/01-home.png)
+
+## Why it is different
+
+- One word is trained through multiple independent recall skills instead of one
+  repeated flashcard.
+- Delayed retries bring errors back without exposing the answer immediately.
+- Lesson authoring, images, recorded or generated speech, progress, and backups
+  work locally without an account or backend.
+- Custom practice can combine lessons and target recent errors or manually
+  difficult cards without changing Learn progress.
+- A built-in, fully offline English demo lesson makes the core flow visible on a
+  fresh installation.
+
+**Early-alpha status:** the core learning workflow, lesson authoring, custom
+practice, review queue, imports/exports, and portable Windows build are
+functional. Authoring polish, voice management, and the Claude-assisted lesson
+creation workflow are under active development.
+
+The product landing page lives in [`landing/`](landing/). The application pitch
+and prepared Claude for Startups copy live in
+[`docs/ANTHROPIC_APPLICATION.md`](docs/ANTHROPIC_APPLICATION.md).
+
+Product behavior is defined in `docs/SPEC.md`; current verification is tracked
+in `docs/STATUS.md`.
 
 Russian user documentation and a hands-on test checklist are available in [`docs/USER_GUIDE_RU.md`](docs/USER_GUIDE_RU.md).
 

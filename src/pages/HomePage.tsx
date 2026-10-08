@@ -10,6 +10,7 @@ import {
   Play,
   Plus,
   SlidersHorizontal,
+  Sparkles,
   Trash2,
 } from "lucide-react";
 import {
@@ -33,6 +34,7 @@ import {
   statisticsRepository,
 } from "../data";
 import { getUserErrorKey } from "../services/errors";
+import { installBuiltInDemoLesson } from "../services/demo-content";
 import {
   summarizeLesson,
   type LessonSummary,
@@ -51,6 +53,7 @@ export function HomePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [importing, setImporting] = useState(false);
+  const [installingDemo, setInstallingDemo] = useState(false);
   const [importMessage, setImportMessage] = useState<string | null>(null);
   const [nowMs, setNowMs] = useState(() => Date.now());
   const lessonInput = useRef<HTMLInputElement>(null);
@@ -128,6 +131,19 @@ export function HomePage() {
       setImportMessage(t(getUserErrorKey(error)));
     } finally {
       setImporting(false);
+    }
+  }
+
+  async function installDemoLesson() {
+    setInstallingDemo(true);
+    setImportMessage(null);
+    try {
+      await installBuiltInDemoLesson();
+      await requestPersistentStorage();
+    } catch {
+      setImportMessage(t("home.demoError"));
+    } finally {
+      setInstallingDemo(false);
     }
   }
 
@@ -219,6 +235,14 @@ export function HomePage() {
               icon={<FileUp aria-hidden="true" size={18} />}
             >
               {importing ? t("settings.importing") : t("home.importLesson")}
+            </Button>
+            <Button
+              variant="secondary"
+              disabled={installingDemo}
+              onClick={() => void installDemoLesson()}
+              icon={<Sparkles aria-hidden="true" size={18} />}
+            >
+              {installingDemo ? t("common.loading") : t("home.tryDemo")}
             </Button>
           </div>
         </section>

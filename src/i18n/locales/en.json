@@ -45,7 +45,9 @@
     "empty": "Your vocabulary workspace is ready.",
     "emptyBody": "Create your first lesson in any language or import an existing Lesson file.",
     "createFirst": "Create your first lesson",
-    "importLesson": "Import lesson"
+    "importLesson": "Import lesson",
+    "tryDemo": "Try the demo lesson",
+    "demoError": "The demo lesson could not be prepared. Please try again."
   },
   "today": {
     "title": "Today",

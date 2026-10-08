@@ -45,7 +45,9 @@
     "empty": "귀하의 어휘 작업 공간이 준비되었습니다.",
     "emptyBody": "어떤 언어로든 첫 번째 강의를 만들거나 기존 강의 파일을 가져오세요.",
     "createFirst": "첫 번째 강의 만들기",
-    "importLesson": "레슨 가져오기"
+    "importLesson": "레슨 가져오기",
+    "tryDemo": "데모 레슨 체험",
+    "demoError": "데모 레슨을 준비하지 못했습니다. 다시 시도해 주세요."
   },
   "today": {
     "title": "오늘", "ready": "오늘의 학습 대기열이 준비됐어요", "continue": "학습 계속하기", "reviews": "복습", "difficult": "어려움", "newCards": "새 카드", "estimate": "약 {{minutes}}분", "materialQueue": "새 학습 자료 순서", "remaining": "복습 {{count}}개 남음", "typePrompt": "답을 보기 전에 단어를 떠올려 보세요", "kanaChoicePrompt": "로마자에 맞는 가나 문자를 선택하세요", "yourAnswer": "학습 단어 입력", "check": "답 확인", "couldNotRecall": "기억나지 않음", "answerCorrect": "정확히 맞았어요", "answerDifferent": "정답과 비교해 보세요", "howWell": "얼마나 빨리 기억났나요?", "ratingHint": "먼저 하나를 선택하세요. 아직 다음 문제로 넘어가지 않습니다.",

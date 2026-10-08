@@ -4,6 +4,12 @@ Updated: 2026-10-08
 
 ## Completed
 
+- Presentation alpha adds a reversible Git branch, a built-in eight-card English
+  demo Lesson with four offline images and local WAV speech, a visible early-alpha
+  status, reproducible product screenshots, a static product landing page, a
+  GitHub Pages workflow, and prepared Claude for Startups application copy. Empty
+  libraries can install the demo in one click; existing user libraries are left
+  unchanged.
 - Version 0.8.7 rebuilds image discovery around exact Card meaning, exact target and target-language context, followed by a concise beginner flashcard/educational-illustration refinement. The restrictive Google clip-art filter and competing exact SEO phrases are removed so textbook diagrams and real teaching cards remain eligible.
 - Handwriting comparison now accepts recognizable approximate forms instead of expecting mouse, pen or touch input to reproduce the reference typeface. Coarser structural matching and wider local tolerance preserve rejection of incomplete and differently oriented shapes, and the learner-facing hint now states that individual handwriting is expected.
 - Version 0.8.6 prevents duplicate visible choice answers, including the shared `o` reading of katakana `オ/ヲ`. Choice text is normalized before deduplication, and resuming an older Learn session repairs an already-saved question that contains equivalent answers.

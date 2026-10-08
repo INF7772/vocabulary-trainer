@@ -1,6 +1,6 @@
 {
   "name": "vocabulary-trainer",
-  "version": "0.8.7",
+  "version": "0.9.0-alpha.1",
   "description": "Local-first vocabulary training application",
   "private": true,
   "type": "module",
@@ -25,6 +25,7 @@
     "desktop:dev": "npm run build && electron .",
     "desktop:smoke": "npm run build && electron . --smoke-test-output=artifacts/desktop-smoke.json",
     "desktop:build": "npm run build && electron-builder --win portable --x64",
+    "capture:presentation": "node scripts/capture-presentation.mjs",
     "package:distribution": "powershell -ExecutionPolicy Bypass -File scripts/package-distribution.ps1"
   },
   "dependencies": {
@@ -103,6 +104,7 @@
       "!node_modules/**/*"
     ],
     "win": {
+      "icon": "public-app/icons/icon.png",
       "target": [
         {
           "target": "portable",

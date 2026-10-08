@@ -45,7 +45,9 @@
     "empty": "語彙ワークスペースの準備ができました。",
     "emptyBody": "任意の言語で最初のレッスンを作成するか、既存のレッスン ファイルをインポートします。",
     "createFirst": "最初のレッスンを作成する",
-    "importLesson": "インポートレッスン"
+    "importLesson": "インポートレッスン",
+    "tryDemo": "デモレッスンを試す",
+    "demoError": "デモレッスンを準備できませんでした。もう一度お試しください。"
   },
   "today": {
     "title": "今日", "ready": "今日の学習キューができました", "continue": "学習を続ける", "reviews": "復習", "difficult": "難しい", "newCards": "新規", "estimate": "約{{minutes}}分", "materialQueue": "新しい教材の順番", "remaining": "復習はあと{{count}}件", "typePrompt": "答えを見る前に単語を思い出してください", "kanaChoicePrompt": "ローマ字に合うかなを選んでください", "yourAnswer": "対象の単語を入力", "check": "答えを確認", "couldNotRecall": "思い出せなかった", "answerCorrect": "正解です", "answerDifferent": "正しい答えと比べてください", "howWell": "どのくらい早く思い出せましたか？", "ratingHint": "まず一つ選んでください。まだ次の課題には進みません。",

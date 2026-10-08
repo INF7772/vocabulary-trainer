@@ -45,7 +45,9 @@
     "empty": "Il tuo spazio di lavoro per il vocabolario è pronto.",
     "emptyBody": "Crea la tua prima lezione in qualsiasi lingua o importa un file di lezione esistente.",
     "createFirst": "Crea la tua prima lezione",
-    "importLesson": "Importa lezione"
+    "importLesson": "Importa lezione",
+    "tryDemo": "Prova la lezione demo",
+    "demoError": "Non è stato possibile preparare la lezione demo. Riprova."
   },
   "today": {
     "title": "Oggi", "ready": "La coda di studio è pronta", "continue": "Continua a studiare", "reviews": "Ripassi", "difficult": "Difficili", "newCards": "Nuove", "estimate": "Circa {{minutes}} minuti", "materialQueue": "Coda del nuovo materiale", "remaining": "Restano {{count}} ripassi", "typePrompt": "Ricorda la parola prima di mostrare la risposta", "kanaChoicePrompt": "Scegli il segno kana corrispondente al rōmaji", "yourAnswer": "Scrivi la parola obiettivo", "check": "Controlla", "couldNotRecall": "Non la ricordo", "answerCorrect": "Corrispondenza esatta", "answerDifferent": "Confronta la tua risposta con quella corretta", "howWell": "Quanto velocemente l’hai ricordata?", "ratingHint": "Prima scegli un’opzione. Non passerai ancora alla prossima attività.",
