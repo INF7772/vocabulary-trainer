@@ -97,6 +97,6 @@ claimed user, revenue, or growth metrics yet.
 
 ## Prepared links
 
-- Product site: replace after free deployment
-- Source repository: replace after GitHub publication
-- Windows alpha: replace after the release asset is uploaded
+- Product site: `https://inf7772.github.io/vocabulary-trainer/`
+- Source repository: `https://github.com/INF7772/vocabulary-trainer`
+- Windows alpha: `https://github.com/INF7772/vocabulary-trainer/releases/download/v0.9.0-alpha.1/Vocabulary-Trainer-0.9.0-alpha.1-portable.exe`
